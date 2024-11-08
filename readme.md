@@ -1,47 +1,47 @@
 # Retrieve Generate
 
-## Introdução
+## Introduction
 
-Este projeto implementa um sistema de recuperação de argumentos utilizando a técnica de "Retrieve and Generate" (RAG). O código é capaz de extrair informações de um documento Word (no formato `.docx`) e gerar respostas baseadas nas perguntas feitas. O objetivo é facilitar a consulta a informações contidas no documento, permitindo que os usuários obtenham respostas de forma rápida e eficiente.
+This project implements a system for retrieving arguments using the "Retrieve and Generate" (RAG) technique. The code is capable of extracting information from a Word document (in `.docx` format) and generating answers based on the questions asked. The goal is to facilitate the consultation of information contained in the document, allowing users to obtain answers quickly and efficiently.
 
-## Como Rodar
+## How to Run
 
-Para executar o projeto, siga os passos abaixo:
+To execute the project, follow the steps below:
 
-1. **Clone o repositório**:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/jonhnatta/retrieve-generate.git
    cd retrieve-generate
    ```
 
-2. **Instale as dependências**:
-   Certifique-se de que você tem o Python e o `pip` instalados. Em seguida, instale as dependências necessárias:
+2. **Install the dependencies**:
+   Make sure you have Python and `pip` installed. Then, install the necessary dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Prepare o documento**:
-   O arquivo que você deseja fazer leitura deve estar presente na raiz do projeto.
-   - O arquivo deve ser do tipo `.docx`
+3. **Prepare the document**:
+   The file you want to read must be present in the root of the project.
+   - The file must be of the `.docx` type.
 
-4. **Altere o código**:
-5. Procure no código pela variavel `document_link` e altere o nome do arquivo para o que você colocou na raiz do projeto.
+4. **Change the code**:
+5. Look for the variable `document_link` in the code and change the file name to what you placed in the root of the project.
    ```python
-   document_link = "./<nome_do_arquivo>.docx"  # Altere o caminho conforme necessário
+   document_link = "./<file_name>.docx"  # Change the path as necessary
    ```
 
-6. **Configure a chave da API**:
-   Crie um arquivo `.env` na raiz do projeto e adicione a seguinte linha:
+6. **Configure the API key**:
+   Create a `.env` file in the root of the project and add the following line:
    ```
-   OPENAI_API_KEY=<sua_chave_api>
+   OPENAI_API_KEY=<your_api_key>
    ```
 
-7. **Execute o código**:
-   Após garantir que o documento está no lugar correto e que todas as dependências estão instaladas, você pode rodar o código:
+7. **Run the code**:
+   After ensuring that the document is in the correct place and that all dependencies are installed, you can run the code:
    ```bash
    python main.py
    ```
 
-## Contribuições
+## Contributions
 
-Sinta-se à vontade para contribuir com melhorias ou correções. Para isso, crie um fork do repositório e envie um pull request com suas alterações.
+Feel free to contribute with improvements or fixes. To do this, create a fork of the repository and submit a pull request with your changes.
