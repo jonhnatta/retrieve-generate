@@ -21,12 +21,11 @@ Para executar o projeto, siga os passos abaixo:
    ```
 
 3. **Prepare o documento**:
-   O arquivo que você deseja fazer leitura deve estar presente na raiz do projeto. Caso você queira editar o documento:
-   - Abra o arquivo deve ser do tipo `.docx`
-   - Faça as alterações necessárias e salve o arquivo.
+   O arquivo que você deseja fazer leitura deve estar presente na raiz do projeto.
+   - O arquivo deve ser do tipo `.docx`
 
 4. **Altere o código**:
-5. Procure no código pela variavel `document_link` e altere para o arquivo que você colocou na raiz do projeto.
+5. Procure no código pela variavel `document_link` e altere o nome do arquivo para o que você colocou na raiz do projeto.
    ```python
    document_link = "./<nome_do_arquivo>.docx"  # Altere o caminho conforme necessário
    ```
