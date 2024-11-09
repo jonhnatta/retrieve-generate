@@ -3,3 +3,4 @@ childVectorDB/
 venv/
 .env
 .docx
+.DS_Store

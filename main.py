@@ -10,7 +10,6 @@ from langchain.storage import InMemoryStore
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -69,6 +68,15 @@ output_parser = StrOutputParser()
 
 parent_chain_retrieval = setup_retrieval | rag_prompt | llm | output_parser
 
-response = parent_chain_retrieval.invoke("quem pode fazer segunda graduação em matemática?")
 
-print(response)
+while True:
+    print("Digite sua pergunta, e para encerrar o chat digite 2:")
+    question = input()
+    if question == "2":
+        print("Chat encerrado.")
+        break
+    elif():
+        continue
+    else:
+        response = parent_chain_retrieval.invoke(question)
+        print("\n",response,"\n")
