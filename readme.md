@@ -27,7 +27,7 @@ To execute the project, follow the steps below:
 4. **Change the code**:
 5. Look for the variable `document_link` in the code and change the file name to what you placed in the root of the project.
    ```python
-   document_link = "./<file_name>.docx"  # Change the path as necessary
+   document_link = "./<file_name>.docx"  # Change the path
    ```
 
 6. **Configure the API key**:
