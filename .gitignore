@@ -4,4 +4,4 @@ venv/
 .env
 .docx
 .DS_Store
-.docx
+*.docx
