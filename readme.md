@@ -30,13 +30,23 @@ To execute the project, follow the steps below:
    document_link = "./<file_name>.docx"  # Change the path
    ```
 
-6. **Configure the API key**:
+6. **Configure the template**:
+   In addition to changing the `document_link`, you should also modify the instructions in the template. Look for the following line in the code:
+   ```python
+   TEMPLATE = """
+       <agent instruction>
+       ...
+   """
+   ```
+   Replace the instruction with another that fits your agent.
+
+7. **Configure the API key**:
    Create a `.env` file in the root of the project and add the following line:
    ```
    OPENAI_API_KEY=<your_api_key>
    ```
 
-7. **Run the code**:
+8. **Run the code**:
    After ensuring that the document is in the correct place and that all dependencies are installed, you can run the code:
    ```bash
    python main.py

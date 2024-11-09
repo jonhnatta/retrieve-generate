@@ -48,6 +48,8 @@ parente_document_retriever.add_documents(document, ids=None)
 
 # print(parente_document_retriever.vectorstore.get())
 
+
+
 TEMPLATE = """
     Você é um especialista em educação a distância. Responda as perguntas utilizando o contexto informado.
     
